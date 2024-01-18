@@ -12,7 +12,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <p>Content</p>
+      <p className="bg-slate-500 text-center h-[calc(100vh-6rem)] flex items-center justify-center">
+        Content
+      </p>
     </>
   );
 }
