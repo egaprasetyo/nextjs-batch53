@@ -4,7 +4,7 @@ import Footer from "@/components/footer";
 
 export default function Layout({ children, metaTitle, metaDescription }) {
   return (
-    <div>
+    <>
       <Head>
         <title>
           {`Create Next App - ${metaTitle || "this is default meta title"}`}
@@ -17,10 +17,16 @@ export default function Layout({ children, metaTitle, metaDescription }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <div className="text-center h-[calc(100vh-6rem)] flex items-center justify-center bg-slate-500">
+      <div
+        className="text-center h-[calc(100vh-6rem)] flex items-center justify-center bg-slate-500"
+        style={{
+          height: "calc(100vh - 6rem)",
+          backgroundColor: "rgb(100 116 139)",
+        }}
+      >
         {children}
       </div>
       <Footer />
-    </div>
+    </>
   );
 }
