@@ -18,7 +18,7 @@ export default function Layout({ children, metaTitle, metaDescription }) {
       </Head>
       <Header />
       <div
-        className="text-center h-[calc(100vh-6rem)] flex items-center justify-center bg-slate-500"
+        className="text-center h-[calc(100vh-6rem)] flex flex-col items-center justify-center bg-slate-500"
         style={{
           height: "calc(100vh - 6rem)",
           backgroundColor: "rgb(100 116 139)",
